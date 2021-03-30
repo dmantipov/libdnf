@@ -40,6 +40,8 @@ protected:
         }
         return false;
     }
+    bool progress_emited = false;
+    double total = 0;
 };
 
 class DbusPackageCB : public libdnf::rpm::PackageTargetCB, public DbusCallback {
